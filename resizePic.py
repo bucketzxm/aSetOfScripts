@@ -6,7 +6,6 @@ from PIL import Image
 import os,sys
 
 
-
 def resize(path=".", format="png",height=1024,weight=768):
 	'''
 	Use PIL to resize the image
@@ -18,7 +17,6 @@ def resize(path=".", format="png",height=1024,weight=768):
 				img_small = img.resize((height,weight))
 				img_small.save( path+"/../small/" + item.split('.')[0] + '.jpg')
 
-
-
 if __name__ == "__main__":
 	resize(sys.argv[1])
+
