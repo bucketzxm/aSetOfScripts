@@ -16,9 +16,9 @@ def parseXml( text ):
 	doc = xml.dom.minidom.parseString(text)
 
 	root = doc.documentElement
+	print("root=>%s",root)
 	for child in root.childNodes:
-		print child.nodeType
-		print getTagText(root,child.nodeName)
+		print(child)
 
 
 if __name__ == "__main__":
